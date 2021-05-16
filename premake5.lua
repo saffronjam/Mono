@@ -2,10 +2,12 @@ project "mono"
     kind "StaticLib"
     language "C++"
     staticruntime "on"
+	cppdialect "C++17"
 	
     files
     {
         "include/monopp/**.*",
+        "src/**.*",
     }
 
     includedirs
